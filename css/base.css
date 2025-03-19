@@ -24,6 +24,8 @@ a{text-decoration: none;}
 
 body {
 	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	background-color: #FFEFD5;
+
 }
 
 * {
@@ -33,3 +35,26 @@ body {
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+
+/* header {
+	background-color: lightgray;
+}
+
+footer {
+	background-color: darkgray;
+} */
+/*
+カラーコードについて
+背景色は下記のカラーコードを使用してください。
+文字色はそれぞれ白と黒で大丈夫です。
+
+header: lightgray;
+footer: darkgray;
+body
+    全体: #FFEFD5
+    新型コロナウイルスに対する取り組み部分 : #FFC7AF
+    アドレス部分: black
+スライドショーについて
+見本の制作ではSwiperというライブラリを使用して作られています。
+そちらを採用しても大丈夫ですし、他のライブラリあるいはご自身でゼロから実装していただいても問題有りません。 */
