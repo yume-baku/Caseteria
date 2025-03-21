@@ -1,0 +1,48 @@
+/*
+  for Casteria Page
+*/
+
+body {
+  background-color: #ffefd5;
+}
+
+header {
+  background-color: lightgray;
+}
+
+footer {
+  height: 80px;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: darkgray;
+}
+
+.casteria-info button {
+  background-color: #ffc7af;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+
+.accordion-menu__body {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.casteria-info li {
+  list-style: disc;
+  margin-left: 2em;
+  padding-bottom: 1em;
+}
+
+.casteria-each-store h2 {
+  text-align: center;
+}
+
+.casteria-each-store img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
