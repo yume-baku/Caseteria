@@ -23,6 +23,11 @@ footer {
 /*
   各要素の調整
 */
+
+.casteria-search button {
+  background-color: #efefef;
+}
+
 .casteria-info li {
   list-style: disc;
   margin-left: 2em;
