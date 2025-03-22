@@ -2,6 +2,9 @@
   for Casteria Page
 */
 
+/*
+  全体
+*/
 body {
   background-color: #ffefd5;
 }
@@ -17,19 +20,9 @@ footer {
   background-color: darkgray;
 }
 
-.casteria-info button {
-  background-color: #ffc7af;
-  width: 100%;
-  text-align: left;
-  border: none;
-}
-
-.accordion-menu__body {
-  height: 0;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-
+/*
+  各要素の調整
+*/
 .casteria-info li {
   list-style: disc;
   margin-left: 2em;
@@ -45,4 +38,35 @@ footer {
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
+}
+
+/*
+  アコーディオンメニュー機能用
+*/
+.casteria-info button {
+  background-color: #ffc7af;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+
+.accordion-menu__body {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+/*
+  フェードイン機能用(スクロールでふわっと表示)
+*/
+
+.fadein-component {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+}
+
+.fadein-component__is-active {
+  opacity: 1;
+  visibility: visible;
 }
