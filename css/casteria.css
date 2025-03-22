@@ -75,14 +75,15 @@ footer {
   opacity: 1;
   visibility: visible;
 }
+
 .swiper {
-  width: 600px;
+  width: 100%;
   height: 300px;
 }
 
-.swiper-slide {
-  height: 100vh;
-}
-.swiper-slide > img {
-  object-fit: cover; /* IE: not support */
+.swiper-slide img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
 }

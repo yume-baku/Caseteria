@@ -21,42 +21,16 @@
     <!-- CDN: スライダーSwiper.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- スライダーSwiper.jsの初期化や設定 -->
-    <script type="module">
-      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        loop: true,
-        spaceBetween: 0,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-        autoplay: {
-          delay: 3000,
-        },
-      });
-    </script>
-    <!-- <script src="./js/Swiper.js" defer></script> -->
 
     <!-- Original -->
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/casteria.css" />
     <script src="./js/AccordionMenu.js" defer></script>
     <script src="./js/FadeInByScroll.js" defer></script>
+
+    <!-- Original for CDN -->
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <script type="module" src="./js/Swiper.js" defer></script>
   </head>
   <body>
     <!-- ヘッダ -->
@@ -102,19 +76,12 @@
         </div>
       </nav>
       <!-- ヘッダ: 画像表示部 -->
-      <!-- <div class="row"> -->
-      <!-- <img src="./img/food.jpg" class="object-fit-cover col-6 p-0" alt="" /> -->
-      <!-- <img src="./img/food2.jpg" class="object-fit-cover col-6 p-0" alt="" /> -->
-      <div class="swiper w-100">
+      <div class="swiper">
         <div class="swiper-wrapper">
-          <!-- <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div> -->
-
-          <div class="swiper-slide"><img src="./img/food.jpg" class="object-fit-cover" alt="" /></div>
-          <div class="swiper-slide"><img src="./img/food2.jpg" class="object-fit-cover" alt="" /></div>
-          <div class="swiper-slide"><img src="./img/food3.jpg" class="object-fit-cover" alt="" /></div>
-          <div class="swiper-slide"><img src="./img/food4.jpg" class="object-fit-cover" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/interior.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/restaurant.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/food.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/food2.jpg" alt="" /></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
