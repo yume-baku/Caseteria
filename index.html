@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casteria</title>
+    <!-- CDN: Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- CDN: スライダーSwiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Original -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/casteria.css" />
+    <script src="./js/AccordionMenu.js" defer></script>
+    <script src="./js/FadeInByScroll.js" defer></script>
+
+    <!-- Original for CDN -->
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <script type="module" src="./js/Swiper.js" defer></script>
+  </head>
+  <body>
+    <!-- ヘッダ -->
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <!-- ヘッダ: ロゴ -->
+          <a class="navbar-brand fs-1 fw-bold" href="#">Casteria</a>
+
+          <!-- ヘッダ: ナビゲーション -->
+          <button
+            class="navbar-toggler float-end"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            ariria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbar-content" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Drink</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-nowrap" href="#">お問合せ</a>
+              </li>
+            </ul>
+            <form class="casteria-search d-flex" role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn fw-bold ms-1" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- ヘッダ: 画像表示部 -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/interior.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/restaurant.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/food.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/food2.jpg" alt="" /></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </header>
+
+    <!-- ボディ全体を中央寄せ -->
+    <div class="casteria-info d-flex justify-content-center">
+      <div class="w-75">
+        <!-- 案内文 -->
+        <main>
+          <article>
+            <h1 class="fs-1 mt-3">新型コロナウイルスに対する取り組みの最新情報をご案内</h1>
+            <section class="accordion-menu">
+              <button class="accordion-menu__button fs-3 p-2 mb-2">■衛生面に関して</button>
+              <div class="accordion-menu__body">
+                <ul>
+                  <li>出勤前の検温の徹底</li>
+                  <li>レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</li>
+                  <li>より頻度の高い手洗いの励行</li>
+                  <li>テーブルにお客様用の消毒用アルコールの設置</li>
+                  <li>従業員間の距離確保のため、休憩や研修時の客席利用</li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <button class="accordion-menu__button fs-3 p-2 mb-2">■お客様へのご協力のお願い</button>
+              <div class="accordion-menu__body">
+                <ul>
+                  <li>店内では、飲食時以外のマスク着用をお願いいたします</li>
+                  <li>入店時の手指の消毒にご協力ください</li>
+                  <li>レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</li>
+                  <li>
+                    多数でお越しの際は、おひとりがまとめてご注文願います（混雑時に入場制限をする場合がございます）
+                  </li>
+                  <li>発熱や体調不良の際はご入店をお控えください</li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <button class="accordion-menu__button fs-3 p-2 mb-2">■サービスに関して</button>
+              <div class="accordion-menu__body">
+                <ul>
+                  <li>直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+                  <li>ドリンクやフードのサンプリング中止</li>
+                  <li>地域活動・イベントの中止</li>
+                  <li>混雑時間帯の客席の譲り合いへのご協力お願いの実施</li>
+                  <li>店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</li>
+                  <li>混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</li>
+                </ul>
+              </div>
+            </section>
+          </article>
+        </main>
+
+        <!-- 当店のこだわり紹介 -->
+        <aside>
+          <div class="fadein-component p-3">
+            <h2 class="fs-3 fw-bold p-2">Signature Food</h2>
+            <div class="row">
+              <div class="col-md-6 p-md-0">
+                <img src="./img/food.jpg" class="object-fit-cover w-100" alt="" />
+              </div>
+              <div class="col-md-6 p-md-4">
+                <p>
+                  サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる２種のソースも絶品です！
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="fadein-component p-3">
+            <h2 class="fs-3 fw-bold p-2">Our Coffee</h2>
+            <div class="row">
+              <div class="col-md-6 p-md-0">
+                <img src="./img/barista.jpg" class="object-fit-cover w-100" alt="" />
+              </div>
+              <div class="col-md-6 p-md-4">
+                <p>
+                  当店のコーヒー豆は厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="fadein-component p-3">
+            <h2 class="fs-3 fw-bold p-2">Our Food</h2>
+            <div class="row">
+              <div class="col-md-6 p-md-0">
+                <img src="./img/food3.jpg" class="object-fit-cover w-100 h-100" alt="" />
+              </div>
+              <div class="col-md-6 p-md-4">
+                <p>
+                  当店は何よりまず衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- 店舗情報 -->
+        <address id="Contact" class="fadein-component row mt-3 p-2 text-white bg-black">
+          <div class="col-md-6">
+            <h2 class="fs-3 p-3">Address</h2>
+            <p class="p-2">681 xxxx Drive, xxxx xxxx #01 - 06 000000</p>
+            <p class="p-2">Opening Hours</p>
+            <h2 class="fs-3 p-3">Mondays - Friday:10am - 9pm</h2>
+            <p class="p-2">Saturdays, Sundays & Public Holidays: 9am- 9pm</p>
+          </div>
+          <div class="col-md-6 p-md-3">
+            <img src="./img/barista.jpg" class="object-fit-cover w-100 h-100" alt="" />
+          </div>
+        </address>
+
+        <!-- 各店舗住所 -->
+        <aside class="fadein-component casteria-each-store d-none d-md-block">
+          <h2 class="fs-3 p-2 m-2">店舗一覧</h2>
+          <div class="row d-flex justify-content-between">
+            <div class="col-3">
+              <img src="./img/restaurant2.jpg" alt="" />
+              <p>東京都渋谷区xxxxx xxxxx</p>
+            </div>
+            <div class="col-3">
+              <img src="./img/restaurant3.jpg" alt="" />
+              <p>千葉県松戸市xxxxx xxxxx</p>
+            </div>
+            <div class="col-3">
+              <img src="./img/restaurant4.jpg" alt="" />
+              <p>神奈川県横浜市xxxxx xxxxx</p>
+            </div>
+            <div class="col-3">
+              <img src="./img/restaurant5.jpg" alt="" />
+              <p>埼玉県川越市xxxxx xxxxx</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- フッタ -->
+    <footer>
+      <ul class="d-flex justify-content-center align-items-center gap-3">
+        <li>プライバシーポリシー</li>
+        <li>お問合せ</li>
+        <li>運営会社</li>
+      </ul>
+    </footer>
+  </body>
+</html>
